@@ -1,0 +1,61 @@
+.list, .chart {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100vh;
+  .date {
+    margin-top: 70px;
+    text-align: center;
+    .icon {
+      margin: 0 10px;
+      font-size: 12px;
+      color: #e9578c;
+    }
+    .no {
+      color: rgba(169, 169, 169, 0.67);
+    }
+  }
+  .lists {
+    flex: 2;
+    // height: 100vw;
+    height:55%;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    & > div {
+      height: 100% !important;
+    }
+    .plate {
+      font-size: 11px;
+    }
+    .icon {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      text-align: center;
+      line-height: 35px;
+      font-size: 20px;
+      border-radius: 50%;
+      color: #fff;
+      background: rgba(111, 111, 111, 0.67);
+      transform: translateY(-50%);
+      &.i-left2 {
+        left: 10px;
+        z-index: 10;
+      }
+    }
+  }
+  .button-group {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+  }
+}
+
+a {
+  text-decoration: none;
+}
